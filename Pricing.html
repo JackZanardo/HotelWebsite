@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en-au">
+<head>
+    <meta charset="utf-8" />
+    <title>Sorrento - Pricing</title>
+    <link href="Layout.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="Home.html">
+            <img id="logo" src="Images/sorrento_by_the_sea_logo.jpg" alt="Sorrento by the sea Logo" />
+        </a>
+        <nav>
+
+            <ul>
+
+                <li id="homePageLink"><a href="Home.html">Home page</a></li>
+                <li id="AboutPageLink"><a href="About.html">About</a></li>
+                <li id="HighlightsPageLink"><a href="Highlights.html">Local Area Highlights</a></li>
+                <li id="GettingTherePageLink"><a href="GettingThere.html">Getting There</a></li>
+                <li id="PetFriendlyPageLink"><a href="PetFriendly.html">Pet Friendly</a></li>
+                <li id="PricingPageLink"><a class="active" href="Pricing.html">Pricing</a></li>
+                <li id="ContactPageLink"><a href="Contact.html">Contact</a></li>
+
+
+            </ul>
+
+        </nav>
+    </header>
+    <article>
+        <header><h1>Home</h1></header>
+        <section>
+            <h2>Winter</h2>
+            <p>The pricing is for 2 people.</p>
+            <p>
+                1st June - August 31st
+            </p>
+            <p>The apartment is strictly non-smoking</p>
+            <p>$200 per night</p>
+
+        </section>
+        <section>
+            <h2>Summer</h2>
+            <p>Terms and Conditions</p>
+            <p>
+                1st September - December 18th
+            </p>
+            <p>
+                1st February - 31st May
+            </p>
+            <p>
+                Total amount is payable upon booking.
+            </p>
+            <p>
+
+                $220 per night
+            </p>
+            <p>
+                A full refund will be given prior to 30 days cancellation
+            </p>
+            <p>
+                50% refund will be given after 30 days of cancellation.
+            </p>
+            <p>
+                In the event of a weekly or monthly booking the apartment will be serviced weekly unless by prior arrangement.
+            </p>
+            <p>
+                Weekly Price     $1,250
+            </p>
+            <p>
+                Monthly Price $5,400
+            </p>
+            <p>BOOK NOW</p>
+            <div>
+                <input type="date" id="dates" />
+                <button onclick="AddDate()">Add Date</button>
+                <button onclick="DisplayDateArray()">Show Price</button>
+                <p id="price"></p>
+                <p id="message"></p>
+                
+                <select id="selectedDates">
+                </select>
+                <button onclick="RemoveDate()" >Remove Date</button>
+
+
+            </div>
+
+        </section>
+
+    </article>
+    <footer>
+        <p>Information and Bookings 0435 123 456 42 Holyrood Avenue Sorrento VIC 3943</p>
+        <a href="https://www.facebook.com/">
+            <img id="facebook" src="Images/Footer/facebook_small.png" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/">
+            <img id="twitter" src="Images/Footer/twitter_small.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/">
+            <img id="instagram" src="Images/Footer/instagram_small.png" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/">
+            <img id="youtube" src="Images/Footer/youtube-variation_small.png" alt="Youtube" />
+        </a>
+        <a href="https://www.paypal.com/">
+            <img id="paypal" src="Images/Footer/paypal_small.png" alt="Paypal" />
+        </a>
+    </footer>
+    <script src="PriceCalculator.js" ></script>
+</body>
+</html>

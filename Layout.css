@@ -1,0 +1,166 @@
+﻿body {
+    font-family: Helvetica, Calibri, 'Times New Roman';
+    background-color:rgb(196,200,199);
+}
+
+form {
+    font-size:150%;
+}
+
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 90%; /* Full height */
+    width: 200px;
+    
+}
+
+nav li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #4d1d18;
+    background-color:burlywood;
+}
+
+nav li a.active {
+    background-color: honeydew;
+    color: #4d1d18;
+}
+
+li a:hover {
+    background-color: honeydew;
+    color: #555;
+}
+
+header img {
+    display:flex;
+    align-content:center;
+}
+
+article {
+
+    min-height: 100%;
+    margin-left: 210px;
+    margin-bottom: 20%;
+    padding: 1px;
+}
+
+footer {
+	color:#87423c;
+    text-align: center;
+    padding: 10px;
+    position:relative;
+    margin-top: -200px;
+    font-size: 80%;
+    height: 200px;
+    width: 100%;
+}
+
+h1 {
+    color: #87423c;
+    font-size:36px;
+}
+
+h2 {
+    color: #4d1d18;
+    font-size:24px;
+}
+
+article p {
+    font-size:150%;
+}
+
+
+
+.slideshow {
+    position: relative;
+}
+
+.prev,
+.next {
+    background-color:rgb(196,200,199);
+  cursor: pointer;
+  position: relative; 
+  width: auto;
+  padding: 16px;
+  color: #4d1d18;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: honeydew;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.column {
+    float: left;
+    width: 100px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.mainImage {
+    width: 60%;
+    height:inherit;
+}
+
+
+.slide {
+    width:100px;
+    height:100px;
+    opacity: 0.6;
+}
+
+.active,
+.slide:hover {
+  opacity: 1;
+}
+
+.caption-container {
+    text-align: center;
+    display: block;
+    width: 55%;
+    background-color: burlywood;
+    padding: 2px 16px;
+    color: #4d1d18;
+  }
+
+input.valid
+{
+	background: #dddddd; 
+}
+input.invalid  
+{
+	background: #faa; 
+}
+
+textarea.valid
+{
+	background: #dddddd; 
+}
+textarea.invalid  
+{
+	background: #faa; 
+}

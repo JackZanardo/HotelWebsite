@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en-au">
+<head>
+    <meta charset="utf-8" />
+    <title>Sorrento - Contact</title>
+    <link href="Layout.css" rel="stylesheet" />
+    <style>
+        label {
+            display: inline-block;
+            width: 95px;
+        }
+
+        input, textarea {
+            width: 260px;
+            
+            border-radius: 5px;
+        }
+
+        
+
+            input[type=submit], input[type=reset] {
+                width: 125px;
+                height: 52px;
+            }
+
+            input[type=submit] {
+                margin-left: 100px;
+            }
+
+            input:focus, textarea:focus {
+                background-color: #c9d0d3;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Home.html">
+            <img id="logo" src="Images/sorrento_by_the_sea_logo.jpg" alt="Sorrento by the sea Logo" />
+        </a>
+        <nav>
+
+            <ul>
+
+                <li id="homePageLink"><a href="Home.html">Home page</a></li>
+                <li id="AboutPageLink"><a href="About.html">About</a></li>
+                <li id="HighlightsPageLink"><a href="Highlights.html">Local Area Highlights</a></li>
+                <li id="GettingTherePageLink"><a href="GettingThere.html">Getting There</a></li>
+                <li id="PetFriendlyPageLink"><a href="PetFriendly.html">Pet Friendly</a></li>
+                <li id="PricingPageLink"><a href="Pricing.html">Pricing</a></li>
+                <li id="ContactPageLink"><a class="active" href="Contact.html">Contact</a></li>
+
+
+            </ul>
+
+        </nav>
+    </header>
+    <article>
+        <header><h1>Contact</h1></header>
+        <div>
+            <p>Information and Bookings</p>
+            <p>0435 123 456</p>
+            <p>42 Holyrood Avenue</p>
+            <p>Sorrento VIC 3943</p>
+
+        </div>
+        <div>
+            <form onsubmit="return ValidateForm(this)" action="ThankYou.html" method="get">
+                <label for="username">Username:</label><br />
+                <input type="text" id="username" name="username" placeholder="Username" class="valid" onblur="return ValidateUsername(this,usernameHelp)"/>
+                <span id="usernameHelp"></span><br />
+                <label for="email">Email:</label><br />
+                <input type="text" id="email" name="email" placeholder="Email Address" class="valid" onblur="return ValidateEmail(this,emailHelp)"/>
+                <span id="emailHelp"></span><br />
+                <label for="phone">Phone number:</label><br />
+                <input type="text" id="phone" name="phone" placeholder="Phone number" class="valid" onblur="return ValidatePhone(this,phoneHelp)"/>
+                <span id="phoneHelp"></span><br />
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" placeholder="Your enquiry" class="valid" onblur="return ValidateMessage(this,messageHelp)"></textarea>
+                <span id="messageHelp"></span><br />
+                <input type="submit" value="submit" />
+                <input type="reset" value="reset" />
+            </form>
+        </div>
+    </article>
+    <footer>
+        <p>Information and Bookings 0435 123 456 42 Holyrood Avenue Sorrento VIC 3943</p>
+        <a href="https://www.facebook.com/">
+            <img id="facebook" src="Images/Footer/facebook_small.png" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/">
+            <img id="twitter" src="Images/Footer/twitter_small.png" alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/">
+            <img id="instagram" src="Images/Footer/instagram_small.png" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/">
+            <img id="youtube" src="Images/Footer/youtube-variation_small.png" alt="Youtube" />
+        </a>
+        <a href="https://www.paypal.com/">
+            <img id="paypal" src="Images/Footer/paypal_small.png" alt="Paypal" />
+        </a>
+    </footer>
+    <script src="FormValidation.js"></script>
+</body>
+</html>
